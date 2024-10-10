@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Web</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Fonte padrão para o corpo */
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove padding padrão */
+            background-color: #f4f4f4; /* Cor de fundo */
+        }
+
+        header {
+            background: #FF69B4; /* Cor de fundo do cabeçalho (rosa) */
+            color: #fff; /* Cor do texto do cabeçalho */
+            padding: 15px 20px; /* Padding do cabeçalho */
+        }
+
+        nav ul {
+            list-style: none; /* Remove a lista padrão */
+            padding: 0; /* Remove padding padrão */
+        }
+
+        nav ul li {
+            display: inline; /* Itens em linha */
+            margin-right: 15px; /* Espaçamento entre itens do menu */
+        }
+
+        nav ul li a {
+            color: #fff; /* Cor dos links do menu */
+            text-decoration: none; /* Remove sublinhado dos links */
+        }
+
+        main {
+            padding: 20px; /* Padding principal */
+        }
+
+        footer {
+            background: #333; /* Cor de fundo do rodapé */
+            color: #fff; /* Cor do texto do rodapé */
+            text-align: center; /* Centraliza o texto do rodapé */
+            padding: 10px 0; /* Padding do rodapé */
+            position: relative; /* Permite posicionamento absoluto */
+            bottom: 0; /* Coloca o rodapé na parte inferior */
+            width: 100%; /* Largura total do rodapé */
+        }
+
+        label {
+            display: block; /* Faz a label ocupar uma linha inteira */
+            margin-top: 15px; /* Espaçamento acima da label (opcional) */
+        }
+
+        input, 
+        textarea {
+            display: block; /* Faz o input e textarea ocupar uma linha inteira */
+            width: 100%; /* Faz o input e textarea ocupar toda a largura disponível */
+            padding: 10px; /* Espaçamento interno */
+            margin-top: 5px; /* Espaçamento acima do campo (opcional) */
+            border: 1px solid #ccc; /* Borda do campo */
+            border-radius: 4px; /* Bordas arredondadas */
+            box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+        }
+
+        textarea {
+            height: 100px; /* Define uma altura padrão para a textarea */
+        }
+
+        button {
+            background-color: #333; /* Cor do botão */
+            color: white; /* Cor do texto do botão */
+            padding: 10px 15px; /* Padding do botão */
+            border: none; /* Remove borda do botão */
+            border-radius: 4px; /* Bordas arredondadas */
+            cursor: pointer; /* Muda o cursor para indicar que é clicável */
+            margin-top: 15px; /* Espaçamento acima do botão */
+        }
+
+        button:hover {
+            background-color: #555; /* Cor do botão ao passar o mouse */
+        }
+
+        .contato {
+            display: none; /* Oculta a seção contato por padrão */
+            margin-top: 20px; /* Espaçamento acima da seção contato */
+        }
+
+        .sobre {
+            display: none; /* Oculta a seção sobre por padrão */
+            margin-top: 20px; /* Espaçamento acima da seção sobre */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Projeto Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="linkContato">Contato</a></li> <!-- Modificado para adicionar id -->
+                <li><a href="#" id="linkSobre">Sobre o Curso</a></li> <!-- Modificado para adicionar id -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contato" id="contato">
+            <h2>Inscreva-se no Curso</h2>
+            <p>Preencha o formulário abaixo para se inscrever no curso e receber atualizações.</p>
+            
+            <!-- Botão para voltar sem preencher -->
+            <button id="btnVoltar">Voltar</button>
+
+            <form id="contatoForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="emailContato">Email para Contato:</label>
+                <input type="email" id="emailContato" name="emailContato" placeholder="seuemail@exemplo.com" required>
+
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" placeholder="(XX) XXXXX-XXXX" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <div class="sobre" id="sobre">
+            <h2>Sobre o Curso</h2>
+            <p>Bem-vindo ao nosso curso de desenvolvimento web. Aqui, você aprenderá as habilidades necessárias para se tornar um desenvolvedor web de sucesso.</p>
+            <p>O curso cobre uma variedade de tópicos, incluindo HTML, CSS, JavaScript e muito mais.</p>
+            <button id="btnFechar">Fechar</button> <!-- Botão para fechar a seção sobre -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Meu Projeto Web. Todos os direitos reservados.</p>
+        <p>Feito por <strong>Maria Benicia Soares</strong></p>
+    </footer>
+
+    <script>
+        // Exibe a seção contato ao clicar no link
+        document.getElementById('linkContato').addEventListener('click', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do link
+            document.querySelector('.contato').style.display = 'block'; // Mostra a seção contato
+            document.querySelector('.sobre').style.display = 'none'; // Oculta a seção sobre, se estiver visível
+        });
+
+        // Exibe a seção sobre ao clicar no link
+        document.getElementById('linkSobre').addEventListener('click', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do link
+            document.querySelector('.sobre').style.display = 'block'; // Mostra a seção sobre
+            document.querySelector('.contato').style.display = 'none'; // Oculta a seção contato, se estiver visível
+        });
+
+        // Fecha a seção sobre ao clicar no botão "Fechar"
+        document.getElementById('btnFechar').addEventListener('click', function() {
+            document.querySelector('.sobre').style.display = 'none'; // Oculta a seção sobre
+        });
+
+        // Redireciona de volta à tela principal após o envio do formulário
+        document.getElementById('contatoForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio do formulário
+            // Obtém os dados do formulário
+            const nome = document.getElementById('nome').value;
+            const email = document.getElementById('emailContato').value;
+            const celular = document.getElementById('celular').value;
+            const mensagem = document.getElementById('mensagem').value;
+
+            // Mensagem de confirmação
+            alert(`Formulário enviado com sucesso!\n\nNome: ${nome}\nEmail: ${email}\nCelular: ${celular}\nMensagem: ${mensagem}`); 
+            document.getElementById('contatoForm').reset(); // Limpa o formulário
+            document.querySelector('.contato').style.display = 'none'; // Oculta a seção contato após o envio
+        });
+
+        // Fecha a seção contato ao clicar no botão "Voltar"
+        document.getElementById('btnVoltar').addEventListener('click', function() {
+            document.querySelector('.contato').style.display = 'none'; // Oculta a seção contato
+        });
+    </script>
+</body>
+</html>
