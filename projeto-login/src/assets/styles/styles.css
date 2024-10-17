@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+  }
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+ 
+  .login-container {
+    display: flex;
+    height: 100vh;
+  }
+
+ .esquerda {
+    width: 50%;
+    background-color: #F3FFF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .login-imagem{
+    width: 500.55px;
+ }
+ .direita {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .login-box {
+    width: Hug (400px)px;
+    height: Hug (614px)px;
+    gap: 64px;
+    opacity: 0px;
+    flex-direction: column;
+ }  
+
+.login-box h1 {
+    width: 344px;
+    height: 35px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Archivo;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 34.82px;
+    text-align: left;
+    color:  #1A202C;
+;
+}
+
+login-box h2 {
+    font-family: Archivo;
+    width: 174px;
+    height: 22px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-size: 20px;    
+    font-weight: 500;
+    line-height: 21.76px;
+    text-align: left;    
+}
+
+.login-box label {
+    font-size: 18px;  
+    font-weight: 400;
+    line-height: 19.58px; 
+}
+
+input[type="email"]
+{
+    width: 100%;
+    height: 49px;
+    font-size: 16px;
+    line-height: 17.41px;
+    background-color: #F7FAFC;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    box-sizing: border-box;   
+}
+
+input[type="password"] {
+    width: 100%;
+    height: 49px;  
+    font-size: 16px;
+    line-height: 17.41px;
+    background-color:#F7FAFC;
+    border: 1px solid #E8E8E8;
+    border-radius: 4px;
+    padding: 16px;
+    margin-top: 12px;
+    box-sizing: border-box;
+
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 56px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+
+.remember-me label {
+    font-size: 16px;
+    line-height: 17,41px;
+    font-weight: 600;
+    color: #1A202C;
+}
+
+.forgot-password {
+    font-size: 14px;
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out 
+}
+
+.forgot-password:hover {
+    color: #656769;
+}
+
+
+.btn .btn-google {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 16px 32px 16px 32px;
+    box-sizing: border-box;
+}
+
+.btn {   
+    background-color: #4caf50;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 19.58px;
+    margin-bottom: 24px;
+}
+
+.btn-google {
+    background-color: #1A202C;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 19.58px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 16px 32px; /* Padding do botão */
+    gap: 12px; /* Espaço entre logo e texto */
+    margin-top: 32px; /* Espaço abaixo do botão Google */
+}
+.google-logo {
+    width: 24px;
+    height: 24px;
+    
+}
+
+.signup-link {
+    font-size: 20px;
+    margin-top: 16px; /* Espaço entre o botão e a frase */
+    text-align: center;
+}
+
+.signup-link a {
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+

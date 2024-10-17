@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/styles/styles.css" rel="stylesheet">
+    <title>Página de Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="esquerda">
+            <img src="./assets/images/imagem desktop.png" alt="imagem login" class="login-imagem">
+        </div>
+        <div class="direita">
+            <div class="login-box">
+                <form class="login-form">
+                    <h2>Bem-vindo de volta</h2>
+                    <h1>Faça login na sua conta</h1>
+
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+
+                    <div class="option">
+                        <label class="remember-me">
+                            <input type="checkbox" id="lembrar">
+                            <span>Lembre de mim</span>
+                        </label>
+                        <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                    </div>
+
+                    <div>
+                        <button class="btn">Entrar na conta</button>
+                    </div>
+
+                    <button type="button" class="btn-google">
+                        <img src="./assets/images/icon.png" alt="Google Logo" class="google-logo">
+                        Ou faça login com o Google
+                    </button>
+                </form>
+
+                <div class="signup-link">
+                    Não tem uma conta? <a href="#">Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
