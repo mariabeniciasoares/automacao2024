@@ -22,24 +22,30 @@
                         <label for="email">E-mail</label>
                         <input type="email" id="email" placeholder="Digite seu e-mail" required>
                     </div>
-
-                    <div class="input-group">
+                    <div class="input-group password-container">
                         <label for="senha">Senha</label>
                         <input type="password" id="senha" placeholder="Digite sua senha" required>
-                    </div>
+                    </div> 
+                    
+                    <!--<div id="error-message" class="error-message" style="color: red;"></div>  -->
+                    
+                    <div id="error-message" class="error-message"></div>                   
 
                     <div class="option">
+                        
                         <label class="remember-me">
-                            <input type="checkbox" id="lembrar">
+                            <input type="checkbox" id="lembrar" style="border-radius: 50%;"> <!-- Checkbox arredondada -->
                             <span>Lembre de mim</span>
                         </label>
+                        
                         <a href="#" class="forgot-password">Esqueceu sua senha?</a>
                     </div>
 
                     <div>
                         <button class="btn">Entrar na conta</button>
                     </div>
-
+                    <div id="message" style="color: red; font-weight: bold; border: 2px solid red; padding: 10px; display: none;"></div>
+    
                     <button type="button" class="btn-google">
                         <img src="./assets/images/icon.png" alt="Google Logo" class="google-logo">
                         Ou faça login com o Google
@@ -52,5 +58,6 @@
             </div>
         </div>
     </div>
+    <script src="scripts/main.js"></script>  <!-- script está carregando aqui -->
 </body>
 </html>
