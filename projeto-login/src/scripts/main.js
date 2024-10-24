@@ -22,7 +22,9 @@ document.querySelector('form').addEventListener('submit', function(event) {
     // Valida a senha
     const passwordValidation = /^(?=.*[a-z])(?=.*[!@#$%^&*])(?=.{6,})/;
     if (!passwordValidation.test(password)) {
-        /* errorMessage.textContent = "A senha deve ter pelo menos 6 caracteres, incluindo letras minúsculas e um caractere especial."; */
+        /* 
+        errorMessage.textContent = "A senha deve ter pelo menos 6 caracteres, incluindo letras minúsculas e um caractere especial."; 
+        */
         errorMessage.innerHTML = "A senha deve ter pelo menos 6 caracteres,incluindo letras minúsculas<br> e um caractere especial."; // Usar innerHTML para permitir HTML
         errorMessage.style.display = 'block';  // Exibe a mensagem de erro
         return; // Para a execução se a senha não for válida

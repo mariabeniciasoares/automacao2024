@@ -205,8 +205,14 @@ input[type="password"] {
     /* Ajuste do tamanho da mensagem de erro da senha */
     max-width: 300px; /* Defina a largura máxima que você deseja */
     word-wrap: break-word; /* Permite que palavras longas quebrem em várias linhas */
-    /* **  */
+   /* 
+        errorMessage.textContent = "A senha deve ter pelo menos 6 caracteres, incluindo letras minúsculas e um caractere especial."; 
+        */
     text-align: center; /* Centraliza o texto */
     margin-left: auto; /* Adiciona margem automática à esquerda */
     margin-right: auto; /* Adiciona margem automática à direita */
+    /* 
+        errorMessage.textContent = "A senha deve ter pelo menos 6 caracteres, incluindo letras minúsculas e um caractere especial."; 
+    */
+
 }
