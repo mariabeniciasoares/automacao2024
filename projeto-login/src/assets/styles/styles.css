@@ -202,4 +202,11 @@ input[type="password"] {
     font-weight: bold;
     margin-top: 8px; /* Espaço entre a senha e a mensagem de erro */
     display: none; /* Começa oculta */
+    /* Ajuste do tamanho da mensagem de erro da senha */
+    max-width: 300px; /* Defina a largura máxima que você deseja */
+    word-wrap: break-word; /* Permite que palavras longas quebrem em várias linhas */
+    /* **  */
+    text-align: center; /* Centraliza o texto */
+    margin-left: auto; /* Adiciona margem automática à esquerda */
+    margin-right: auto; /* Adiciona margem automática à direita */
 }
